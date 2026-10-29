@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
 <title>ABOUT | CRUX</title>
 <meta name="description" content="CRUXの主催・運営と、パートナーの皆さま。">
 <link rel="canonical" href="https://crux-project.senastudio.jp/about.html">
@@ -81,77 +80,112 @@ body{margin:0;background:#0B0B0B}
 </style>
 </head>
 <body>
-<noscript><p style="padding:40px;color:#F7F6F2;background:#0B0B0B;font-family:sans-serif">このサイトの表示にはJavaScriptが必要です。</p></noscript>
-<main id="gate" hidden style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:#0B0B0B;color:#F7F6F2;font-family:'Noto Sans JP',system-ui,sans-serif">
-<form id="gate-form" style="width:100%;max-width:380px;display:flex;flex-direction:column;gap:18px;background:#161616;border:2px solid #F7F6F2;padding:36px 32px">
-<img src="assets/crux-logo.webp" alt="CRUX" style="height:64px;width:auto;align-self:flex-start">
-<p style="margin:0;font-size:14px;line-height:1.8;color:#C9C7C1">公開準備中のため、閲覧にはログインが必要です。</p>
-<label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700;color:#A9A7A1">ユーザー名
-<input id="gate-user" name="username" autocomplete="username" required style="min-height:48px;padding:0 14px;font-size:16px;color:#F7F6F2;background:#0B0B0B;border:1px solid #3A3A3A"></label>
-<label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700;color:#A9A7A1">パスワード
-<input id="gate-pass" name="password" type="password" autocomplete="current-password" required style="min-height:48px;padding:0 14px;font-size:16px;color:#F7F6F2;background:#0B0B0B;border:1px solid #3A3A3A"></label>
-<p id="gate-err" role="alert" hidden style="margin:0;font-size:14px;color:#FF4D42">ユーザー名またはパスワードが違います。</p>
-<button type="submit" style="min-height:52px;background:#F7F6F2;color:#0B0B0B;border:0;font-size:15px;font-weight:900;letter-spacing:.08em;cursor:pointer">ログイン</button>
-</form>
-</main>
-<script>
-(function(){
-var SALT='ltwti34I1gKX7Un7ZlSsKA==',IV='v6SZN2Cpw5rH4NX8rU7/Qw==',DATA='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',ITERS=20000,MARK='MAPLEARMY-GATE:',K='crux_gate_key';
-var KC=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
-function sha256(msg){
-  var l=msg.length,n=((l+9+63)>>6)<<6,m=new Uint8Array(n);m.set(msg);m[l]=0x80;
-  var dv=new DataView(m.buffer),bits=l*8;dv.setUint32(n-4,bits>>>0);dv.setUint32(n-8,Math.floor(bits/4294967296));
-  var H=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19],w=new Array(64);
-  for(var o=0;o<n;o+=64){
-    for(var i=0;i<16;i++)w[i]=dv.getUint32(o+i*4);
-    for(i=16;i<64;i++){var x=w[i-15],y=w[i-2];
-      w[i]=(w[i-16]+(((x>>>7)|(x<<25))^((x>>>18)|(x<<14))^(x>>>3))+w[i-7]+(((y>>>17)|(y<<15))^((y>>>19)|(y<<13))^(y>>>10)))|0;}
-    var a=H[0],b=H[1],c=H[2],d=H[3],e=H[4],f=H[5],g=H[6],h=H[7];
-    for(i=0;i<64;i++){
-      var t1=(h+(((e>>>6)|(e<<26))^((e>>>11)|(e<<21))^((e>>>25)|(e<<7)))+((e&f)^(~e&g))+KC[i]+w[i])|0;
-      var t2=((((a>>>2)|(a<<30))^((a>>>13)|(a<<19))^((a>>>22)|(a<<10)))+((a&b)^(a&c)^(b&c)))|0;
-      h=g;g=f;f=e;e=(d+t1)|0;d=c;c=b;b=a;a=(t1+t2)|0;}
-    H[0]=(H[0]+a)|0;H[1]=(H[1]+b)|0;H[2]=(H[2]+c)|0;H[3]=(H[3]+d)|0;H[4]=(H[4]+e)|0;H[5]=(H[5]+f)|0;H[6]=(H[6]+g)|0;H[7]=(H[7]+h)|0;
-  }
-  var out=new Uint8Array(32),od=new DataView(out.buffer);for(i=0;i<8;i++)od.setUint32(i*4,H[i]>>>0);return out;
-}
-function b64(s){var r=atob(s),u=new Uint8Array(r.length);for(var i=0;i<r.length;i++)u[i]=r.charCodeAt(i);return u;}
-function tob64(u){var s='';for(var i=0;i<u.length;i++)s+=String.fromCharCode(u[i]);return btoa(s);}
-function cat(a,b){var r=new Uint8Array(a.length+b.length);r.set(a);r.set(b,a.length);return r;}
-function utf8(s){return unescape(encodeURIComponent(s)).split('').map(function(c){return c.charCodeAt(0);});}
-function derive(pass){
-  var salt=b64(SALT),k=sha256(cat(salt,new Uint8Array(utf8(pass))));
-  for(var i=0;i<ITERS;i++)k=sha256(cat(k,salt));
-  return k;
-}
-function decrypt(key){
-  var ct=b64(DATA),iv=b64(IV),pt=new Uint8Array(ct.length),blk=new Uint8Array(key.length+iv.length+4);
-  blk.set(key);blk.set(iv,key.length);var cdv=new DataView(blk.buffer);
-  for(var i=0,j=0;j<ct.length;i++){
-    cdv.setUint32(key.length+iv.length,i);var ks=sha256(blk);
-    for(var q=0;q<32&&j<ct.length;q++,j++)pt[j]=ct[j]^ks[q];
-  }
-  var text=decodeURIComponent(escape(Array.prototype.map.call(pt,function(c){return String.fromCharCode(c);}).join('')));
-  if(text.indexOf(MARK)!==0)throw new Error('bad');
-  return text.slice(MARK.length);
-}
-function reveal(html){
-  document.body.innerHTML=html;
-  var olds=document.body.querySelectorAll('script');
-  for(var i=0;i<olds.length;i++){var s=document.createElement('script');s.textContent=olds[i].textContent;olds[i].parentNode.replaceChild(s,olds[i]);}
-  if(location.hash){var t=document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView();}
-}
-var stored=null;try{stored=localStorage.getItem(K);}catch(e){}
-if(stored){try{reveal(decrypt(b64(stored)));return;}catch(e){try{localStorage.removeItem(K);}catch(e2){}}}
-var gate=document.getElementById('gate');gate.hidden=false;
-document.getElementById('gate-form').addEventListener('submit',function(ev){
-  ev.preventDefault();
-  var u=document.getElementById('gate-user').value.trim(),p=document.getElementById('gate-pass').value.trim(),err=document.getElementById('gate-err');
-  err.hidden=true;
-  try{var key=derive(u+':'+p),html=decrypt(key);try{localStorage.setItem(K,tob64(key));}catch(e){}reveal(html);}
-  catch(e){err.hidden=false;}
-});
-})();
-</script>
+<div class="cx">
+<header class="hd light">
+<nav class="wrap" aria-label="メインメニュー">
+<a href="index.html" aria-label="CRUX トップ" style="display: flex; align-items: center; min-height: 44px"><img src="assets/v2-crux-logo-black.webp" alt="CRUX" style="height: 66px; width: auto; display: block"></a>
+<div class="menu"><a href="news.html">NEWS</a><a href="about.html" class="on" aria-current="page">ABOUT</a><a href="tournament.html">TOURNAMENT</a><a href="teams.html">TEAMS</a><a href="results.html">RESULTS</a><a class="watch" href="https://www.youtube.com/@_PMSB_" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M6 4 L20 12 L6 20 Z"></path></svg>WATCH</a></div>
+</nav>
+</header>
+<section class="dark slant-b" style="position: relative">
+<img src="assets/star-red.webp" alt="" aria-hidden="true" class="cx-anim hero-star" style="position: absolute; right: 3%; top: 50%; width: 200px; margin-top: -120px; animation: cx-float 7s ease-in-out infinite">
+<div class="wrap" style="position: relative; padding-top: 88px; padding-bottom: 120px; display: flex; flex-direction: column; gap: 18px">
+<span class="tape">CRUX / ABOUT</span>
+<h1 class="st" style="margin: 0; font-size: clamp(64px, 11vw, 150px); line-height: .9">ABOUT</h1>
+<p style="margin: 0; font-size: 16px; color: #C9C7C1">CRUXをつくる主催・運営と、支えてくださるパートナーの皆さま。</p>
+</div>
+</section>
+
+<section class="wrap sec" style="display: flex; flex-direction: column; gap: 36px">
+<div class="sec-h" style="margin-bottom: 0"><div style="display: flex; flex-direction: column; gap: 14px"><span class="tape">ABOUT CRUX</span><h2>ORGANIZATION</h2></div></div>
+<article class="card" style="display: flex; flex-wrap: wrap">
+<div class="dark" style="flex: 1 1 340px; min-height: 240px; display: flex; align-items: center; justify-content: center; padding: 40px; position: relative">
+<span class="tape" style="position: absolute; left: 20px; top: 20px">ORGANIZER</span>
+<img src="assets/org-maple-army-h.webp" alt="MAPLE ARMY" style="width: 78%; max-width: 100%; height: auto; display: block">
+</div>
+<div style="flex: 1.4 1 380px; padding: 36px 36px 40px; display: flex; flex-direction: column; gap: 14px">
+<span class="cd" style="font-weight: 800; font-size: 15px; letter-spacing: .2em; color: var(--grey)">HOSTED BY</span>
+<h3 class="st" style="margin: 0; font-weight: 400; font-size: clamp(34px, 4vw, 48px); line-height: 1">MAPLE ARMY</h3>
+<span class="cd" style="font-weight: 800; font-size: 15px; letter-spacing: .14em">ESPORTS TEAM</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.9; color: #3E3E3E">CRUXを主催するeスポーツチーム。大会の企画から番組演出・クリエイティブまで、全てをMAPLE ARMYで制作しています。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px"><a class="btn" href="https://maplearmy.jp/" target="_blank" rel="noopener" style="min-height: 46px; font-size: 15px">公式ページ →</a><a class="btn line" href="https://x.com/_MAPLE_ARMY" target="_blank" rel="noopener" style="min-height: 46px; font-size: 15px">X</a></div>
+</div>
+</article>
+<article class="card" style="display: flex; flex-wrap: wrap">
+<div class="dark" style="flex: 1 1 340px; min-height: 240px; display: flex; align-items: center; justify-content: center; padding: 40px; position: relative">
+<span class="tape" style="position: absolute; left: 20px; top: 20px">OPERATOR</span>
+<img src="assets/org-pmsb.webp" alt="PMSB" style="width: 72%; max-width: 100%; height: auto; display: block">
+</div>
+<div style="flex: 1.4 1 380px; padding: 36px 36px 40px; display: flex; flex-direction: column; gap: 14px">
+<span class="cd" style="font-weight: 800; font-size: 15px; letter-spacing: .2em; color: var(--grey)">COMPETITION OPERATION</span>
+<h3 class="st" style="margin: 0; font-weight: 400; font-size: clamp(34px, 4vw, 48px); line-height: 1">PMSB</h3>
+<span class="cd" style="font-weight: 800; font-size: 15px; letter-spacing: .14em">PUBG MOBILE SCRIM BEGINNING</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.9; color: #3E3E3E">MAPLE ARMYが主催する競技スクリム。CRUXでは、運営事務局から試合進行・集計までの競技運営業務をPMSBスタッフが担当しています。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px"><a class="btn" href="https://x.com/_PMSB_" target="_blank" rel="noopener" style="min-height: 46px; font-size: 15px">X</a><a class="btn line" href="https://www.youtube.com/@_PMSB_" target="_blank" rel="noopener" style="min-height: 46px; font-size: 15px">YouTube</a></div>
+</div>
+</article>
+</section>
+
+<section class="wrap sec">
+<div class="sec-h"><div style="display: flex; flex-direction: column; gap: 14px"><span class="tape">SUPPORTED BY</span><h2>PARTNERS</h2></div>
+<p style="margin: 0; max-width: 30em; font-size: 15px; line-height: 1.8; color: #3E3E3E">CRUXの開催を支えてくださっているパートナーの皆さま。</p></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 32px">
+<article class="card" style="display: flex; flex-direction: column">
+<div class="dark" style="aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; padding: 28px; border-bottom: 2px solid var(--ink)">
+<img src="assets/org-pcmatic.webp" alt="PC Matic" style="width: 72%; max-width: 100%; max-height: 100%; object-fit: contain; display: block">
+</div>
+<div style="padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<span class="cd" style="font-weight: 800; font-size: 13px; letter-spacing: .2em; color: var(--grey)">PARTNER</span>
+<h3 class="cd" style="margin: 0; font-weight: 900; font-size: 26px; line-height: 1.15">PC Matic</h3>
+<p style="margin: 0 0 8px; font-size: 14px; line-height: 1.85; color: #3E3E3E">ゼロトラストの起源はここから。<br>政府・軍基準のセキュリティを貴方にも</p>
+<a class="btn line" href="https://pcmatic.jp/" target="_blank" rel="noopener" style="align-self: flex-start; min-height: 44px; font-size: 15px; margin-top: auto">公式ページ →</a>
+</div>
+</article>
+<article class="card" style="display: flex; flex-direction: column">
+<div class="dark" style="aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; padding: 28px; border-bottom: 2px solid var(--ink)">
+<img src="assets/org-eabouquet.webp" alt="ea bouquet" style="width: 38%; max-width: 100%; max-height: 100%; object-fit: contain; display: block">
+</div>
+<div style="padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<span class="cd" style="font-weight: 800; font-size: 13px; letter-spacing: .2em; color: var(--grey)">PARTNER</span>
+<h3 class="cd" style="margin: 0; font-weight: 900; font-size: 26px; line-height: 1.15">ea bouquet</h3>
+<p style="margin: 0 0 8px; font-size: 14px; line-height: 1.85; color: #3E3E3E">【大人のための造花】<br>“枯れないお花”と呼ばれるディップフラワーを手掛けます。</p>
+<a class="btn line" href="https://www.instagram.com/ea_bouquet_/" target="_blank" rel="noopener" style="align-self: flex-start; min-height: 44px; font-size: 15px; margin-top: auto">公式ページ →</a>
+</div>
+</article>
+<article class="card" style="display: flex; flex-direction: column">
+<div class="dark" style="aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; padding: 28px; border-bottom: 2px solid var(--ink)">
+<img src="assets/org-pmen-logo.webp" alt="PUBG MOBILE ESPORTS NEWS" style="width: 86%; max-width: 100%; max-height: 100%; object-fit: contain; display: block">
+</div>
+<div style="padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<span class="cd" style="font-weight: 800; font-size: 13px; letter-spacing: .2em; color: var(--grey)">PARTNER</span>
+<h3 class="cd" style="margin: 0; font-weight: 900; font-size: 26px; line-height: 1.15">PUBG MOBILE ESPORTS NEWS</h3>
+<p style="margin: 0 0 8px; font-size: 14px; line-height: 1.85; color: #3E3E3E">日本と世界のPUBG MOBILEの大会・移籍情報を発信するコミュニティアカウント。</p>
+<a class="btn line" href="https://x.com/PUBGM_NewsNow" target="_blank" rel="noopener" style="align-self: flex-start; min-height: 44px; font-size: 15px; margin-top: auto">X →</a>
+</div>
+</article>
+</div>
+</section>
+<div style="height: 112px"></div>
+<footer class="ft dark">
+<div class="wrap" style="padding-top: 56px; padding-bottom: 56px; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px">
+<img src="assets/new-crux-logo-v2.webp" alt="CRUX" style="height: 72px; width: auto; display: block">
+<span aria-hidden="true" style="width: 1px; height: 30px; background: #3A3A3A"></span>
+<img src="assets/org-sena-logo.webp" alt="SENA STUDIO" style="height: 22px; width: auto; display: block">
+<span aria-hidden="true" style="width: 1px; height: 30px; background: #3A3A3A"></span>
+<a href="https://maplearmy.jp/" target="_blank" rel="noopener" style="padding: 0"><img src="assets/org-maple-army-h.webp" alt="MAPLE ARMY" style="height: 16px; width: auto; display: block"></a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px">
+<a href="index.html">TOP</a><a href="news.html">NEWS</a><a href="about.html">ABOUT</a><a href="tournament.html">TOURNAMENT</a><a href="teams.html">TEAMS</a><a href="results.html">RESULTS</a><a href="https://x.com/CRUX_MA" target="_blank" rel="noopener">X</a><a href="https://www.youtube.com/@_PMSB_" target="_blank" rel="noopener">YOUTUBE</a><a href="https://maplearmy.jp/" target="_blank" rel="noopener">MAPLE ARMY</a>
+</div>
+<div style="flex-basis: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding-top: 24px; border-top: 1px solid #333; font-size: 12px; line-height: 1.7; color: #A9A7A1; text-align: left">
+<p style="margin: 0">※CRUX PUBG MOBILEは、KRAFTON JAPANの公式・公認大会ではなく、同社のサポートを受けて実施している大会ではありません。</p>
+<p style="margin: 0">© 2026 KRAFTON, Inc. All Rights Reserved.</p>
+</div>
+<div style="flex-basis: 100%; font-size: 12px; color: #8E8C87">© 2025–2026 SENA STUDIO. MAPLE ARMY and CRUX PROJECT are brands of SENA STUDIO.</div>
+</div>
+</footer>
+</div>
+
 </body>
 </html>
