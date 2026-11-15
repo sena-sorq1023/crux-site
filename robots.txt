@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /2027season/
 Sitemap: https://crux-project.senastudio.jp/sitemap.xml

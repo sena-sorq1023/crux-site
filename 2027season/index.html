@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2027 SEASON LINEUP | CRUX</title>
+<meta name="description" content="CRUX PUBG MOBILE 2027シーズンの大会ラインナップ。WEEKLY BATTLE・INVITATION・端末制限なしの賞金大会の3大会を開催します。">
+<link rel="icon" href="/assets/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CRUX 2027 SEASON LINEUP">
+<meta property="og:description" content="CRUX PUBG MOBILE 2027シーズンの大会ラインナップ。">
+<meta property="og:url" content="https://crux-project.senastudio.jp/2027season/">
+<meta property="og:image" content="https://crux-project.senastudio.jp/assets/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800;1,900&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0B;--ink:#F4F2EF;--sub:#A9A7A3;--dim:#77746F;--line:#2B2B2E;--red:#E0262B;--red2:#B3161B}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans JP',system-ui,sans-serif;line-height:1.6}
+a{color:inherit}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:500;letter-spacing:.24em;font-size:13px;text-transform:uppercase}
+.cd{font-family:'Barlow Condensed','Noto Sans JP',sans-serif;font-style:italic;font-weight:800;letter-spacing:.01em}
+.red{color:var(--red)}
+
+/* 背景：グリッド＋赤い光 */
+.bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:var(--bg)}
+.bg::before{content:'';position:absolute;inset:-60px;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:60px 60px;animation:grid 24s linear infinite}
+.bg::after{content:'';position:absolute;left:50%;top:-20vh;width:120vw;height:90vh;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(200,20,26,.42),rgba(120,10,14,.16) 55%,transparent);animation:glow 9s ease-in-out infinite}
+@keyframes grid{to{transform:translate(60px,60px)}}
+@keyframes glow{0%,100%{opacity:.75}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.bg::before,.bg::after,.rise{animation:none!important}}
+
+.frame{max-width:1680px;margin:24px auto;border:1px solid rgba(224,38,43,.35);min-height:calc(100vh - 48px)}
+.wrap{max-width:1560px;margin:0 auto;padding:0 56px}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding:36px 0 0;color:var(--sub)}
+
+/* HERO */
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:48px 0 24px}
+.hero img{width:min(260px,52vw);height:auto;display:block;filter:drop-shadow(0 0 40px rgba(224,38,43,.35))}
+.hero h1{margin:26px 0 0;display:flex;align-items:center;gap:clamp(12px,2vw,24px);font-size:clamp(24px,6.4vw,52px);line-height:1;letter-spacing:.08em;white-space:nowrap}
+.hero h1::before,.hero h1::after{content:'';width:clamp(32px,8vw,120px);height:1px;background:#6E6C69}
+
+/* LINEUP */
+.lbl{display:block;margin:56px 0 14px}
+.road{display:grid;grid-template-columns:minmax(0,1fr) 72px minmax(0,1fr);align-items:stretch}
+.card{position:relative;border:1px solid #3A3A3D;background:rgba(14,14,15,.85);padding:40px 40px 38px;display:flex;flex-direction:column;justify-content:center;gap:12px;min-width:0}
+.card.hot{border-color:var(--red);background:linear-gradient(135deg,rgba(90,10,14,.55),rgba(20,8,9,.85));box-shadow:0 0 60px rgba(224,38,43,.22)}
+.stg{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px}
+.tag{border:1px solid #9C9A96;padding:4px 10px;font-size:20px;letter-spacing:.06em;line-height:1.1}
+.ttl{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 22px}
+.ttl .cd{font-size:clamp(46px,5.4vw,80px);line-height:.95}
+.ttl b{font-weight:900;font-size:clamp(18px,1.7vw,26px)}
+.meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 22px;color:var(--sub)}
+.meta b{color:var(--ink);font-weight:700;font-size:15px;letter-spacing:.02em}
+.arrow{display:flex;align-items:center;justify-content:center}
+.arrow i{display:block;width:100%;height:2px;background:var(--red);position:relative}
+.arrow i::after{content:'';position:absolute;right:-2px;top:50%;transform:translateY(-50%);border-left:16px solid var(--red);border-top:9px solid transparent;border-bottom:9px solid transparent}
+.card.solo{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.secret{display:inline-block;position:relative;font-size:clamp(46px,5.4vw,80px);line-height:.95}
+.secret span{color:transparent;background:repeating-linear-gradient(135deg,#F4F2EF 0 10px,#D9D6D1 10px 20px);-webkit-background-clip:text;background-clip:text}
+.redact{display:inline-flex;align-items:center;gap:12px}
+.redact{flex-wrap:wrap}
+.redact em{font-style:normal;display:inline-block;height:.62em;width:2.6em;max-width:40vw;background:var(--ink);transform:skewX(-10deg)}
+.redact em+em{width:1.9em}
+.pill{background:var(--ink);color:#0A0A0B;font-weight:900;font-size:clamp(18px,1.8vw,26px);padding:10px 22px;letter-spacing:.06em}
+.right{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+
+/* STAGE 03 詳細 */
+.sec{margin-top:120px;padding-top:44px;border-top:1px solid rgba(224,38,43,.35)}
+.d-head{display:flex;flex-wrap:wrap;align-items:center;gap:20px 34px;margin-top:40px}
+.d-head img{width:min(170px,34vw);height:auto;display:block}
+.d-head .vr{width:1px;align-self:stretch;background:#3A3A3D}
+.d-title{display:flex;flex-direction:column;gap:16px;min-width:0}
+.d-title .redact{font-size:clamp(52px,7vw,104px);line-height:.9}
+.d-title .redact .cd{font-size:inherit}
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px}
+.chip{font-weight:900;font-size:19px;padding:8px 16px;letter-spacing:.06em}
+.chip.w{background:var(--ink);color:#0A0A0B}
+.chip.r{background:var(--red);color:#fff}
+.chips p{margin:0 0 0 6px;font-weight:700;font-size:19px;color:#D9D6D1}
+.d-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px 100px;margin-top:64px}
+.prize{font-size:clamp(84px,10vw,150px);line-height:.85;letter-spacing:-.01em}
+.prize-row{display:flex;flex-wrap:wrap;align-items:flex-end;gap:6px 18px;margin:14px 0 22px}
+.prize-row b{font-weight:900;font-size:clamp(20px,2vw,30px);padding-bottom:10px}
+.plist{margin:0;padding:0;list-style:none;border-top:1px solid #3A3A3D}
+.plist li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #3A3A3D}
+.plist li span{font-weight:900;font-size:clamp(20px,1.8vw,28px)}
+.plist li .cd{font-size:clamp(28px,2.6vw,40px);line-height:1}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr) 30px minmax(0,1fr);align-items:stretch;margin-top:16px}
+.step{border:1px solid #3A3A3D;background:rgba(14,14,15,.85);padding:18px 18px 20px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.step.hot{border-color:var(--red);background:rgba(70,8,11,.6)}
+.step .cd{font-size:clamp(22px,2vw,30px);line-height:1}
+.step b{font-weight:700;font-size:15px;color:#D9D6D1}
+.chev{display:flex;align-items:center;justify-content:center;color:var(--red);font-weight:900;font-size:22px}
+.info{margin:34px 0 0;display:grid;grid-template-columns:150px minmax(0,1fr);border-top:1px solid #3A3A3D}
+.info dt,.info dd{margin:0;padding:22px 0;border-bottom:1px solid #3A3A3D}
+.info dt{color:var(--sub);align-self:stretch;display:flex;align-items:center}
+.info dd{font-weight:900;font-size:clamp(20px,2vw,30px);line-height:1.35;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px}
+.info dd small{font-size:16px;font-weight:700;color:#D9D6D1}
+.note{margin:14px 0 0;font-size:13px;color:var(--sub)}
+
+.more{text-align:center;margin:120px 0 0;font-size:clamp(26px,3vw,40px);letter-spacing:.24em}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding:56px 0 40px;color:var(--dim)}
+.legal{padding:20px 0 44px;border-top:1px solid var(--line);font-size:12px;line-height:1.8;color:#8D8A85}
+.legal p{margin:0}
+.legal a{color:#C9C6C1}
+
+.rise{opacity:0;transform:translateY(16px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+
+@media (max-width:1100px){
+  .road{grid-template-columns:minmax(0,1fr)}
+  .arrow{height:56px}
+  .arrow i{width:2px;height:100%}
+  .arrow i::after{right:auto;left:50%;top:auto;bottom:-2px;transform:translateX(-50%);border-left:9px solid transparent;border-right:9px solid transparent;border-top:16px solid var(--red);border-bottom:0}
+  .d-grid{grid-template-columns:minmax(0,1fr);gap:64px}
+}
+@media (max-width:700px){
+  .frame{margin:0;border:0}
+  .wrap{padding:0 16px}
+  .bar{padding-top:20px;font-size:11px}
+  .card{padding:26px 20px}
+  .tag{font-size:16px}
+  .right{align-items:flex-start}
+  .flow{grid-template-columns:minmax(0,1fr)}
+  .chev{height:28px;transform:rotate(90deg)}
+  .info{grid-template-columns:minmax(0,1fr)}
+  .info dt{padding:16px 0 0;border-bottom:0}
+  .info dd{padding:4px 0 16px}
+  .d-head .vr{display:none}
+  .mono{font-size:11px;letter-spacing:.18em}
+}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="frame">
+<div class="wrap">
+
+<header class="bar mono"><span>CRUX // 2027 SEASON</span><span>PUBG MOBILE</span></header>
+
+<section class="hero rise" aria-labelledby="lineup">
+<img src="crux-mark.webp" alt="CRUX">
+<h1 id="lineup" class="cd">2027 SEASON LINEUP</h1>
+</section>
+
+<main>
+<span class="lbl mono red">ROAD TO INVITATION</span>
+<div class="road rise" style="animation-delay:.15s">
+<article class="card">
+<div class="stg"><span class="mono red">STAGE 01</span><span class="tag cd">4 PHASES</span></div>
+<h2 class="ttl" style="margin:0"><span class="cd">WEEKLY BATTLE</span><b>スマホ限定</b></h2>
+<div class="meta"><span class="mono">CRUX WEEKLY BATTLE 2027</span></div>
+</article>
+<div class="arrow" aria-hidden="true"><i></i></div>
+<article class="card hot">
+<div class="stg"><span class="mono red">STAGE 02</span><span class="tag cd">1 TOURNAMENT</span></div>
+<h2 class="ttl" style="margin:0"><span class="cd">INVITATION</span><b>完全招待制賞金大会</b></h2>
+<div class="meta"><span class="mono">CRUX INVITATION 2027</span><b>STAGE 01の成績に応じて招待チームを決定</b></div>
+</article>
+</div>
+
+<span class="lbl mono" style="color:var(--sub)">STANDALONE</span>
+<article class="card solo rise" style="animation-delay:.3s">
+<div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+<div class="stg"><span class="mono red">STAGE 03</span><span class="tag cd">1 TOURNAMENT</span></div>
+<h2 class="ttl" style="margin:0"><span class="redact cd" role="img" aria-label="大会名は後日発表"><em></em><em></em></span><b>端末制限なし</b></h2>
+</div>
+<div class="right"><span class="pill">単独開催の賞金大会</span><span class="mono" style="color:var(--sub)">CRUX ████ 2027</span></div>
+</article>
+
+<section class="sec" aria-labelledby="s03">
+<span class="mono" style="color:var(--sub)">CRUX // 2027 SEASON // STAGE 03</span>
+<div class="d-head">
+<img src="crux-mark.webp" alt="CRUX">
+<span class="vr" aria-hidden="true"></span>
+<div class="d-title">
+<h2 id="s03" style="margin:0"><span class="redact" role="img" aria-label="大会名は後日発表"><em></em><em></em><span class="cd">2027</span></span></h2>
+<div class="chips"><span class="chip w">端末制限なし</span><span class="chip r">賞金大会</span><p>スマホ・タブレット問わず、日本一を決める。</p></div>
+</div>
+</div>
+
+<div class="d-grid">
+<div>
+<span class="mono red">TOTAL PRIZE POOL</span>
+<div class="prize-row"><span class="prize cd">¥100,000</span><b>賞金総額</b></div>
+<ul class="plist">
+<li><span>優勝</span><span class="cd">¥60,000</span></li>
+<li><span>準優勝</span><span class="cd">¥20,000</span></li>
+<li><span>3位</span><span class="cd">¥10,000</span></li>
+<li><span>大会MVP</span><span class="cd">¥10,000</span></li>
+</ul>
+</div>
+<div>
+<span class="mono red">FORMAT</span>
+<div class="flow">
+<div class="step"><span class="cd">OPEN QUALIFIER</span><b>参加チーム数 無制限</b></div>
+<span class="chev" aria-hidden="true">›</span>
+<div class="step"><span class="cd">SEMI FINAL</span><b>16チーム × 2グループ</b></div>
+<span class="chev" aria-hidden="true">›</span>
+<div class="step hot"><span class="cd">GRAND FINAL</span><b>16チーム</b></div>
+</div>
+<dl class="info">
+<dt class="mono">SCHEDULE</dt><dd>2027年6月〜7月 開催予定<small>3週間・土日開催</small></dd>
+<dt class="mono">ENTRY</dt><dd>2027年4月 受付開始予定</dd>
+<dt class="mono">DEVICE</dt><dd>スマートフォン・タブレット</dd>
+</dl>
+<p class="note">※日程は公式大会のスケジュールにより変更になる場合があります</p>
+</div>
+</div>
+</section>
+
+<p class="more cd">MORE INFO COMING SOON</p>
+</main>
+
+<footer>
+<div class="foot mono"><span>PRODUCED BY SENA STUDIO / OPERATED BY PMSB</span><a href="/" style="text-decoration:none">CRUX PROJECT 公式サイト →</a></div>
+<div class="legal">
+<p>※CRUX PUBG MOBILEは、KRAFTON JAPANの公式・公認大会ではなく、同社のサポートを受けて実施している大会ではありません。</p>
+<p>© 2026 KRAFTON, Inc. All Rights Reserved.</p>
+<p>© 2026 SENA STUDIO. CRUX PROJECT is a brand of SENA STUDIO.</p>
+</div>
+</footer>
+
+</div>
+</div>
+</body>
+</html>
