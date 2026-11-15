@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /2027season/
+Disallow: /aboutinvi.html
 Sitemap: https://crux-project.senastudio.jp/sitemap.xml
