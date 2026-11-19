@@ -15,6 +15,7 @@
 <meta property="og:url" content="https://crux-project.senastudio.jp/2027season/">
 <meta property="og:image" content="https://crux-project.senastudio.jp/assets/ogp.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://use.typekit.net/vfk1fyh.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..900&family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
@@ -40,7 +41,7 @@ a{color:inherit}
 
 .frame{position:fixed;inset:20px;border:1px solid rgba(224,38,43,.35);pointer-events:none;z-index:2}
 header,footer{position:relative;z-index:6;display:flex;justify-content:space-between;gap:16px;padding:36px 44px 0;
-  font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:400;font-size:12px;line-height:1.4;letter-spacing:.16em;color:var(--sub)}
+  font-family:'transducer-variable','Archivo',sans-serif;font-stretch:115%;font-weight:400;font-size:12px;line-height:1.4;letter-spacing:.16em;color:var(--sub)}
 footer{padding:0 44px 40px;justify-content:center;color:var(--dim);letter-spacing:.16em;font-size:11px;text-align:center}
 .rec{display:inline-flex;align-items:center;gap:8px;color:var(--red)}
 .rec::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);animation:blink 1.2s steps(2) infinite}
@@ -50,11 +51,11 @@ main{position:relative;max-width:100vw;overflow:hidden;z-index:6;flex:1;display:
 .mark{width:150px;height:auto;display:block;animation:flick 6s infinite}
 @keyframes flick{0%,100%{opacity:1}41%{opacity:1}42%{opacity:.2}43%{opacity:1}44%{opacity:.4}45%{opacity:1}78%{opacity:1}79%{opacity:.1}80%{opacity:1}}
 
-.season{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:700;font-size:15px;line-height:1;letter-spacing:.1em;color:#D7B57A;display:flex;align-items:center;gap:18px}
+.season{font-family:'transducer-variable','Archivo',sans-serif;font-stretch:125%;font-weight:700;font-size:15px;line-height:1;letter-spacing:.1em;color:#D7B57A;display:flex;align-items:center;gap:18px}
 .season::before,.season::after{content:"";width:64px;height:1px;background:#4A4A4D}
 
 /* COMING SOON のグリッチ */
-.glitch{position:relative;margin:0;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;
+.glitch{position:relative;margin:0;font-family:'transducer-variable','Archivo',sans-serif;font-stretch:125%;font-weight:900;
   font-size:clamp(34px,8.6vw,132px);max-width:100%;line-height:.92;letter-spacing:-.01em;white-space:nowrap;
   background:linear-gradient(180deg,#FFFFFF 0%,#E9E7E3 55%,#9C9A96 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .glitch::before,.glitch::after{content:attr(data-text);position:absolute;inset:0;pointer-events:none}
@@ -74,9 +75,9 @@ main{position:relative;max-width:100vw;overflow:hidden;z-index:6;flex:1;display:
 @keyframes shake{0%{transform:translate(0) skewX(0)}25%{transform:translate(-8px,2px) skewX(-8deg)}50%{transform:translate(6px,-1px) skewX(6deg)}75%{transform:translate(-3px,0) skewX(-2deg)}100%{transform:translate(0) skewX(0)}}
 
 .reveal{display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:4px}
-.reveal .lbl{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:12px;line-height:1;letter-spacing:.3em;color:var(--red)}
-.reveal .txt{font-family:'Archivo','Noto Sans JP',sans-serif;font-stretch:115%;font-weight:600;font-size:14px;line-height:1.7;color:#D9D6D1;letter-spacing:.04em}
-.reveal .meta{display:flex;gap:14px;align-items:center;font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:500;font-size:12px;line-height:1;letter-spacing:.12em;color:var(--sub)}
+.reveal .lbl{font-family:'transducer-variable','Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:12px;line-height:1;letter-spacing:.3em;color:var(--red)}
+.reveal .txt{font-family:'transducer-variable','Archivo','Noto Sans JP',sans-serif;font-stretch:115%;font-weight:600;font-size:14px;line-height:1.7;color:#D9D6D1;letter-spacing:.04em}
+.reveal .meta{display:flex;gap:14px;align-items:center;font-family:'transducer-variable','Archivo',sans-serif;font-stretch:115%;font-weight:500;font-size:12px;line-height:1;letter-spacing:.12em;color:var(--sub)}
 .reveal .meta i{width:1px;height:10px;background:#4A4A4D}
 .reveal .meta a{text-decoration:none}
 .reveal .meta a:hover{color:var(--ink)}
@@ -112,7 +113,7 @@ main{position:relative;max-width:100vw;overflow:hidden;z-index:6;flex:1;display:
 </main>
 <script>
 (function(){
-var SALT='jxbLFQcvmMmMJTxfo8C85A==',IV='FeVNmeOEpRhtslgQleBarg==',DATA='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',ITERS=20000,MARK='MAPLEARMY-GATE:',K='crux_gate_2027season';
+var SALT='O6qZXOwspNAiu9nHnNcIAg==',IV='Ig2spBnozjcsCrZ3PLKLDA==',DATA='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',ITERS=20000,MARK='MAPLEARMY-GATE:',K='crux_gate_2027season';
 var KC=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
 function sha256(msg){
   var l=msg.length,n=((l+9+63)>>6)<<6,m=new Uint8Array(n);m.set(msg);m[l]=0x80;
