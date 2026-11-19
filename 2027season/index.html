@@ -3,8 +3,6 @@
 <head><script>(function(){try{var q=location.search;if(/maint=off/.test(q))localStorage.setItem('sena-maint-off','1');if(/maint=on/.test(q))localStorage.removeItem('sena-maint-off');if(localStorage.getItem('sena-maint-off'))return;}catch(e){}if(Date.now()>=Date.parse('2026-11-19T23:00:00+09:00')){document.documentElement.style.visibility='hidden';location.replace('/maintenance.html');}})();</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<meta name="robots" content="noindex, nofollow">
 <title>COMING SOON | CRUX</title>
 <meta name="description" content="CRUX PUBG MOBILE 2027シーズンのお知らせ。">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png">
@@ -97,76 +95,44 @@ main{position:relative;max-width:100vw;overflow:hidden;z-index:6;flex:1;display:
 </style>
 </head>
 <body>
-<noscript><p style="padding:40px;color:#F7F6F2;background:#0B0B0B;font-family:sans-serif">このサイトの表示にはJavaScriptが必要です。</p></noscript>
-<main id="gate" hidden style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:#0B0B0B;color:#F7F6F2;font-family:'Noto Sans JP',system-ui,sans-serif">
-<form id="gate-form" style="width:100%;max-width:380px;display:flex;flex-direction:column;gap:18px;background:#161616;border:2px solid #F7F6F2;padding:36px 32px">
-<img src="/assets/crux-logo.webp" alt="CRUX" style="height:64px;width:auto;align-self:flex-start">
-<p style="margin:0;font-size:14px;line-height:1.8;color:#C9C7C1">公開準備中のため、閲覧にはログインが必要です。</p>
-<label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700;color:#A9A7A1">ユーザー名
-<input id="gate-user" name="username" autocomplete="username" required style="min-height:48px;padding:0 14px;font-size:16px;color:#F7F6F2;background:#0B0B0B;border:1px solid #3A3A3A"></label>
-<label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700;color:#A9A7A1">パスワード
-<input id="gate-pass" name="password" type="password" autocomplete="current-password" required style="min-height:48px;padding:0 14px;font-size:16px;color:#F7F6F2;background:#0B0B0B;border:1px solid #3A3A3A"></label>
-<p id="gate-err" role="alert" hidden style="margin:0;font-size:14px;color:#FF4D42">ユーザー名またはパスワードが違います。</p>
-<button type="submit" style="min-height:52px;background:#F7F6F2;color:#0B0B0B;border:0;font-size:15px;font-weight:900;letter-spacing:.08em;cursor:pointer">ログイン</button>
-</form>
+<div class="bg"></div>
+<div class="noise"></div>
+<div class="bar" id="bar"></div>
+
+<header><span>CRUX // 2027 SEASON</span><span class="rec">SIGNAL LOST</span></header>
+
+<main>
+<img class="mark" src="crux-mark.webp" alt="CRUX">
+<span class="season">2027 SEASON</span>
+<h1 class="glitch" id="g" data-text="COMING SOON">COMING SOON</h1>
+<div class="redact" aria-hidden="true"><span style="width:180px"></span><span style="width:90px"></span><span style="width:140px"></span></div>
+<div class="reveal">
+<span class="lbl">REVEAL</span>
+<span class="txt">CRUX INVITATION 2026 MAIN EVENT DAY4 配信内にて発表</span>
+<span class="meta"><span>2026.12.27 SUN</span><i></i><a href="https://www.youtube.com/@_PMSB_">YOUTUBE.COM/@_PMSB_</a></span>
+</div>
 </main>
+
+<footer>© 2026 SENA STUDIO. CRUX PROJECT is a brand of SENA STUDIO.</footer>
+
 <script>
 (function(){
-var SALT='dohY4NXVtPAvhJyCS8Fg5w==',IV='9R664DrJuF1wWPygPNoWIA==',DATA='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',ITERS=20000,MARK='MAPLEARMY-GATE:',K='crux_gate_2027season';
-var KC=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
-function sha256(msg){
-  var l=msg.length,n=((l+9+63)>>6)<<6,m=new Uint8Array(n);m.set(msg);m[l]=0x80;
-  var dv=new DataView(m.buffer),bits=l*8;dv.setUint32(n-4,bits>>>0);dv.setUint32(n-8,Math.floor(bits/4294967296));
-  var H=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19],w=new Array(64);
-  for(var o=0;o<n;o+=64){
-    for(var i=0;i<16;i++)w[i]=dv.getUint32(o+i*4);
-    for(i=16;i<64;i++){var x=w[i-15],y=w[i-2];
-      w[i]=(w[i-16]+(((x>>>7)|(x<<25))^((x>>>18)|(x<<14))^(x>>>3))+w[i-7]+(((y>>>17)|(y<<15))^((y>>>19)|(y<<13))^(y>>>10)))|0;}
-    var a=H[0],b=H[1],c=H[2],d=H[3],e=H[4],f=H[5],g=H[6],h=H[7];
-    for(i=0;i<64;i++){
-      var t1=(h+(((e>>>6)|(e<<26))^((e>>>11)|(e<<21))^((e>>>25)|(e<<7)))+((e&f)^(~e&g))+KC[i]+w[i])|0;
-      var t2=((((a>>>2)|(a<<30))^((a>>>13)|(a<<19))^((a>>>22)|(a<<10)))+((a&b)^(a&c)^(b&c)))|0;
-      h=g;g=f;f=e;e=(d+t1)|0;d=c;c=b;b=a;a=(t1+t2)|0;}
-    H[0]=(H[0]+a)|0;H[1]=(H[1]+b)|0;H[2]=(H[2]+c)|0;H[3]=(H[3]+d)|0;H[4]=(H[4]+e)|0;H[5]=(H[5]+f)|0;H[6]=(H[6]+g)|0;H[7]=(H[7]+h)|0;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var g = document.getElementById('g'), bar = document.getElementById('bar');
+  // ときどき「じじっ」と乱れる
+  function burst(){
+    g.classList.remove('burst'); void g.offsetWidth; g.classList.add('burst');
+    var n = 2 + Math.floor(Math.random()*3), i = 0;
+    (function tick(){
+      bar.style.top = (Math.random()*100) + 'vh';
+      bar.style.height = (1 + Math.random()*2) + 'px';
+      bar.style.opacity = .18 + Math.random()*.22;
+      if (++i < n) setTimeout(tick, 45 + Math.random()*60);
+      else setTimeout(function(){ bar.style.height = 0; }, 60);
+    })();
+    setTimeout(burst, 1400 + Math.random()*2600);
   }
-  var out=new Uint8Array(32),od=new DataView(out.buffer);for(i=0;i<8;i++)od.setUint32(i*4,H[i]>>>0);return out;
-}
-function b64(s){var r=atob(s),u=new Uint8Array(r.length);for(var i=0;i<r.length;i++)u[i]=r.charCodeAt(i);return u;}
-function tob64(u){var s='';for(var i=0;i<u.length;i++)s+=String.fromCharCode(u[i]);return btoa(s);}
-function cat(a,b){var r=new Uint8Array(a.length+b.length);r.set(a);r.set(b,a.length);return r;}
-function utf8(s){return unescape(encodeURIComponent(s)).split('').map(function(c){return c.charCodeAt(0);});}
-function derive(pass){
-  var salt=b64(SALT),k=sha256(cat(salt,new Uint8Array(utf8(pass))));
-  for(var i=0;i<ITERS;i++)k=sha256(cat(k,salt));
-  return k;
-}
-function decrypt(key){
-  var ct=b64(DATA),iv=b64(IV),pt=new Uint8Array(ct.length),blk=new Uint8Array(key.length+iv.length+4);
-  blk.set(key);blk.set(iv,key.length);var cdv=new DataView(blk.buffer);
-  for(var i=0,j=0;j<ct.length;i++){
-    cdv.setUint32(key.length+iv.length,i);var ks=sha256(blk);
-    for(var q=0;q<32&&j<ct.length;q++,j++)pt[j]=ct[j]^ks[q];
-  }
-  var text=decodeURIComponent(escape(Array.prototype.map.call(pt,function(c){return String.fromCharCode(c);}).join('')));
-  if(text.indexOf(MARK)!==0)throw new Error('bad');
-  return text.slice(MARK.length);
-}
-function reveal(html){
-  document.body.innerHTML=html;
-  var olds=document.body.querySelectorAll('script');
-  for(var i=0;i<olds.length;i++){var s=document.createElement('script');s.textContent=olds[i].textContent;olds[i].parentNode.replaceChild(s,olds[i]);}
-  if(location.hash){var t=document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView();}
-}
-var stored=null;try{stored=localStorage.getItem(K);}catch(e){}
-if(stored){try{reveal(decrypt(b64(stored)));return;}catch(e){try{localStorage.removeItem(K);}catch(e2){}}}
-var gate=document.getElementById('gate');gate.hidden=false;
-document.getElementById('gate-form').addEventListener('submit',function(ev){
-  ev.preventDefault();
-  var u=document.getElementById('gate-user').value.trim(),p=document.getElementById('gate-pass').value.trim(),err=document.getElementById('gate-err');
-  err.hidden=true;
-  try{var key=derive(u+':'+p),html=decrypt(key);try{localStorage.setItem(K,tob64(key));}catch(e){}reveal(html);}
-  catch(e){err.hidden=false;}
-});
+  setTimeout(burst, 900);
 })();
 </script>
 </body>
